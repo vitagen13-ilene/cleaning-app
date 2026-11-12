@@ -1,0 +1,7 @@
+{
+  "name": "PureClean Pro",
+  "description": "Premium residential and commercial cleaning platform with instant quoting, interactive room-by-room booking, and live cleaner dispatch checklist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
