@@ -9,6 +9,7 @@ import { HeroSection } from './components/HeroSection';
 import { ServiceShowcase } from './components/ServiceShowcase';
 import { CleanersRoster } from './components/CleanersRoster';
 import { PricingCalculatorSection } from './components/PricingCalculatorSection';
+import { CalculatorBanner } from './components/CalculatorBanner';
 import { CleanerOperationsDashboard } from './components/CleanerOperationsDashboard';
 import { CustomerPortal } from './components/CustomerPortal';
 import { BookingModal } from './components/BookingModal';
@@ -30,7 +31,7 @@ export default function App() {
   // Persistent bookings state
   const [bookings, setBookings] = useState<Booking[]>(() => {
     try {
-      const saved = localStorage.getItem('pureclean_bookings');
+      const saved = localStorage.getItem('pureclean_bookings_v2');
       return saved ? JSON.parse(saved) : INITIAL_BOOKINGS;
     } catch {
       return INITIAL_BOOKINGS;
@@ -41,7 +42,7 @@ export default function App() {
 
   useEffect(() => {
     try {
-      localStorage.setItem('pureclean_bookings', JSON.stringify(bookings));
+      localStorage.setItem('pureclean_bookings_v2', JSON.stringify(bookings));
     } catch (e) {
       console.warn('Unable to persist bookings to localStorage', e);
     }
@@ -142,9 +143,10 @@ export default function App() {
               }}
             />
 
-            <PricingCalculatorSection
-              onBookWithConfig={(config) => {
-                handleStartCustomBooking(config);
+            <CalculatorBanner
+              onOpenCalculator={() => {
+                setCurrentTab('calculator');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             />
 

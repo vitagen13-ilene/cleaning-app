@@ -331,10 +331,10 @@ export const CleanerOperationsDashboard: React.FC<CleanerOperationsDashboardProp
               <div className="relative rounded-xl overflow-hidden border border-stone-200 h-44 bg-stone-100">
                 <img
                   src={beforeAfterMode === 'after' 
-                    ? '/src/assets/images/cleaning_kitchen_pristine_1794458450958.jpg'
-                    : '/src/assets/images/cleaning_deep_bathroom_1794458449943.jpg'
+                    ? '/src/assets/images/hdb_kitchen_spotless_1794470015567.jpg'
+                    : '/src/assets/images/hdb_bathroom_sparkling_1794470016889.jpg'
                   }
-                  alt="Quality inspection photo"
+                  alt="Quality inspection photo in Singapore HDB apartment"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />

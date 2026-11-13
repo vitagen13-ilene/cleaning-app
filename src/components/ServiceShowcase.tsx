@@ -97,10 +97,10 @@ export const ServiceShowcase: React.FC<ServiceShowcaseProps> = ({ onSelectTier }
               <div className="relative rounded-2xl overflow-hidden border border-stone-200 shadow-sm aspect-4/3 group">
                 <img
                   src={activeTab === 'deep' || activeTab === 'move_in_out' 
-                    ? '/src/assets/images/cleaning_deep_bathroom_1794458449943.jpg'
-                    : '/src/assets/images/cleaning_kitchen_pristine_1794458450958.jpg'
+                    ? '/src/assets/images/hdb_bathroom_sparkling_1794470016889.jpg'
+                    : '/src/assets/images/hdb_kitchen_spotless_1794470015567.jpg'
                   }
-                  alt={currentTier.name}
+                  alt={`${currentTier.name} in modern Singapore HDB flat`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />

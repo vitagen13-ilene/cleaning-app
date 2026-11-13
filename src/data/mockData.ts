@@ -178,44 +178,44 @@ export const SERVICE_ADDONS: ServiceAddon[] = [
 export const CLEANER_SPECIALISTS: CleanerSpecialist[] = [
   {
     id: 'cleaner-1',
-    name: 'Elena Vance',
-    avatarUrl: '/src/assets/images/cleaner_pro_specialist_1794458451003.jpg',
+    name: 'Mei Ling Tan',
+    avatarUrl: '/src/assets/images/cleaner_asian_female_lead_1794470012666.jpg',
     title: 'Lead Cleaning Specialist & Sanitation Auditor',
     rating: 4.98,
     completedJobs: 412,
     experienceYears: 6,
-    specialties: ['Deep Restoration', 'Eco-Botanical', 'Luxury Stone Care'],
-    bio: 'Passionate about pristine Scandinavian order and non-toxic sanitation. Trained in delicate marble, natural brass, and high-end textiles.',
+    specialties: ['Deep Restoration', 'Eco-Botanical', 'HDB & Condo Detailing'],
+    bio: 'Passionate about pristine modern order and non-toxic sanitation. Specialist in modern vinyl floors, quartz countertops, and delicate glass partition maintenance.',
     available: true
   },
   {
     id: 'cleaner-2',
     name: 'Marcus Chen',
-    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    avatarUrl: '/src/assets/images/cleaner_asian_male_expert_1794470014966.jpg',
     title: 'Senior Move-Out & Turnover Expert',
     rating: 4.95,
     completedJobs: 338,
     experienceYears: 5,
     specialties: ['Move In/Out Turnover', 'Kitchen Detailing', 'Post-Reno Dust'],
-    bio: 'Renowned for meticulous attention to appliance interiors, tile grout recovery, and landlord-grade inspection standards.',
+    bio: 'Renowned for meticulous attention to appliance interiors, tile grout recovery, and strict inspection handover standards.',
     available: true
   },
   {
     id: 'cleaner-3',
-    name: 'Sarah Jenkins',
-    avatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
+    name: 'Sarah Lim',
+    avatarUrl: '/src/assets/images/cleaner_asian_female_senior_1794470013721.jpg',
     title: 'Residential Care Specialist',
     rating: 4.97,
     completedJobs: 285,
     experienceYears: 4,
     specialties: ['Routine Maintenance', 'Pet-Friendly Homes', 'Organizing'],
-    bio: 'Specializes in busy family homes with children and pets. Known for swift, gentle, and quiet execution with zero disruption.',
+    bio: 'Specializes in busy family HDB apartments with children and pets. Known for swift, gentle, and quiet execution with zero disruption.',
     available: true
   },
   {
     id: 'cleaner-4',
-    name: 'David Miller',
-    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    name: 'David Tan',
+    avatarUrl: '/src/assets/images/cleaner_asian_male_tech_1794470015339.jpg',
     title: 'Commercial & Detail Technician',
     rating: 4.92,
     completedJobs: 194,
@@ -258,11 +258,11 @@ export const INITIAL_BOOKINGS: Booking[] = [
   {
     id: 'book-101',
     bookingCode: 'PC-84920',
-    customerName: 'Claire Tremblay',
-    customerEmail: 'claire.t@gmail.com',
-    customerPhone: '(415) 890-4421',
-    address: '742 Evergreen Terrace, Apt 4B',
-    unit: 'Apt 4B',
+    customerName: 'Claire Tan',
+    customerEmail: 'claire.tan@gmail.com',
+    customerPhone: '+65 9123 4421',
+    address: 'Blk 284 Bishan Street 22, #11-142',
+    unit: '#11-142',
     serviceType: 'deep',
     bedrooms: 2,
     bathrooms: 2,
@@ -271,10 +271,10 @@ export const INITIAL_BOOKINGS: Booking[] = [
     addons: ['oven', 'windows', 'eco_botanicals'],
     scheduledDate: new Date().toISOString().split('T')[0], // Today!
     timeSlot: 'morning',
-    specialInstructions: 'Please take extra care around the natural marble coffee table. Code for building callbox is #4412.',
+    specialInstructions: 'Please take extra care around the fluted wood TV console and living room sliding track. Intercom code is #1142.',
     accessMethod: 'doorman',
     hasPets: true,
-    petDetails: 'One gentle Golden Retriever named Ollie (will be in guest room during clean).',
+    petDetails: 'One gentle Corgi named Mochi (will be in guest room during clean).',
     cleanerId: 'cleaner-1',
     status: 'in_progress',
     subtotal: 384,
@@ -286,14 +286,14 @@ export const INITIAL_BOOKINGS: Booking[] = [
     createdAt: '2026-11-10T14:22:00Z',
     beforeAfterPhotos: [
       {
-        room: 'Living Room & Windows',
-        beforeUrl: '/src/assets/images/cleaning_hero_livingroom_1794458449549.jpg',
-        afterUrl: '/src/assets/images/cleaning_hero_livingroom_1794458449549.jpg'
+        room: 'HDB Living Room & Windows',
+        beforeUrl: '/src/assets/images/hdb_livingroom_pristine_1794470014732.jpg',
+        afterUrl: '/src/assets/images/hdb_livingroom_pristine_1794470014732.jpg'
       },
       {
-        room: 'Kitchen Island',
-        beforeUrl: '/src/assets/images/cleaning_kitchen_pristine_1794458450958.jpg',
-        afterUrl: '/src/assets/images/cleaning_kitchen_pristine_1794458450958.jpg'
+        room: 'HDB Kitchen & Service Yard',
+        beforeUrl: '/src/assets/images/hdb_kitchen_spotless_1794470015567.jpg',
+        afterUrl: '/src/assets/images/hdb_kitchen_spotless_1794470015567.jpg'
       }
     ]
   },
@@ -302,9 +302,9 @@ export const INITIAL_BOOKINGS: Booking[] = [
     bookingCode: 'PC-84921',
     customerName: 'Marcus Sterling',
     customerEmail: 'm.sterling@agency.co',
-    customerPhone: '(415) 321-9980',
-    address: '108 Montgomery St, Suite 500',
-    unit: 'Floor 5',
+    customerPhone: '+65 8321 9980',
+    address: '108 Robinson Road, Level 12',
+    unit: 'Level 12',
     serviceType: 'office',
     bedrooms: 3, // conference rooms
     bathrooms: 2,
@@ -331,8 +331,8 @@ export const INITIAL_BOOKINGS: Booking[] = [
     bookingCode: 'PC-83915',
     customerName: 'Victoria & James Wong',
     customerEmail: 'v.wong@family.org',
-    customerPhone: '(415) 774-1209',
-    address: '382 Marina Blvd',
+    customerPhone: '+65 9774 1209',
+    address: 'Blk 412 Tampines Street 41, #08-65',
     serviceType: 'standard',
     bedrooms: 3,
     bathrooms: 2,
@@ -343,7 +343,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
     timeSlot: 'morning',
     accessMethod: 'home',
     hasPets: true,
-    petDetails: 'One Siamese cat, very shy.',
+    petDetails: 'One British Shorthair cat, very shy.',
     cleanerId: 'cleaner-1',
     status: 'completed',
     subtotal: 284,
@@ -354,7 +354,7 @@ export const INITIAL_BOOKINGS: Booking[] = [
     checklist: INITIAL_CHECKLIST.map(t => ({ ...t, completed: true })),
     createdAt: '2026-11-02T10:00:00Z',
     rating: 5,
-    review: 'Elena was phenomenal. The house smelled like crisp eucalyptus and every corner of the master bathroom looked like a five-star hotel. We set up bi-weekly recurring immediately!',
+    review: 'Mei Ling was phenomenal. The whole flat smelled like crisp eucalyptus and every corner of the master bathroom looked like a five-star hotel. We set up bi-weekly recurring immediately!',
     tipAmount: 30
   }
 ];
@@ -370,7 +370,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: 'Can I request the exact same cleaner for recurring visits?',
-    a: 'Yes! When booking weekly, bi-weekly, or monthly cleans, your designated specialist (such as Elena or Marcus) is locked in as your primary dedicated provider to ensure consistent familiarity with your home.'
+    a: 'Yes! When booking weekly, bi-weekly, or monthly cleans, your designated specialist (such as Mei Ling or Marcus) is locked in as your primary dedicated provider to ensure consistent familiarity with your home.'
   },
   {
     q: 'What is your cancellation or rescheduling policy?',

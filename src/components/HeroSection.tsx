@@ -188,8 +188,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-5 relative flex items-center">
             <div className="w-full h-full min-h-[380px] lg:min-h-[480px] rounded-2xl overflow-hidden border border-stone-200 shadow-sm relative group">
               <img
-                src="/src/assets/images/cleaning_hero_livingroom_1794458449549.jpg"
-                alt="Immaculate Scandinavian living room after PureClean service"
+                src="/src/assets/images/hdb_livingroom_pristine_1794470014732.jpg"
+                alt="Immaculate modern Singapore HDB apartment living room after PureClean service"
                 className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -225,7 +225,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               Residential Cleans Completed
             </div>
             <div className="text-xs text-stone-500 mt-0.5">
-              Across San Francisco, Oakland & Marin County
+              Across Singapore HDB Estates, BTOs & Condominiums
             </div>
           </div>
 

@@ -217,7 +217,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <div className="flex justify-between text-stone-600">
                   <span>Assigned Specialist</span>
                   <span className="font-medium text-stone-800">
-                    {CLEANER_SPECIALISTS.find(c => c.id === confirmedBooking.cleanerId)?.name || 'Elena Vance'}
+                    {CLEANER_SPECIALISTS.find(c => c.id === confirmedBooking.cleanerId)?.name || 'Mei Ling Tan'}
                   </span>
                 </div>
                 <div className="flex justify-between text-stone-600">
@@ -598,7 +598,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. Elena Rostova"
+                        placeholder="e.g. Rachel Lim"
                         value={customerName}
                         onChange={(e) => setCustomerName(e.target.value)}
                         className="w-full text-xs bg-stone-50 border border-stone-200 rounded-lg p-2.5 text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-700"
@@ -612,7 +612,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       </label>
                       <input
                         type="tel"
-                        placeholder="(415) 555-0199"
+                        placeholder="+65 9123 4567"
                         value={customerPhone}
                         onChange={(e) => setCustomerPhone(e.target.value)}
                         className="w-full text-xs bg-stone-50 border border-stone-200 rounded-lg p-2.5 text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-700"
@@ -625,7 +625,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. 540 Howard St, Apt 6B"
+                        placeholder="e.g. Blk 284 Bishan St 22, #11-142"
                         value={address}
                         onChange={(e) => setAddress(e.target.value)}
                         className="w-full text-xs bg-stone-50 border border-stone-200 rounded-lg p-2.5 text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-700"
